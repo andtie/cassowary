@@ -1,7 +1,6 @@
 // Copyright © 2019 Saleem Abdulrasool <compnerd@compnerd.org>.
 // SPDX-License-Identifier: BSD-3-Clause
 
-@_implementationOnly
 import OrderedCollections
 
 /// An expression is a linear combination of terms and a constant.

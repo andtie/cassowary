@@ -8,8 +8,7 @@ let cassowary = Package(
     .library(name: "cassowary", targets: ["Cassowary"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-collections.git",
-             .upToNextMinor(from: "1.0.0")),
+    .package(url: "https://github.com/apple/swift-collections.git", from: "1.3.0"),
   ],
   targets: [
     .target(name: "Cassowary", dependencies: [
