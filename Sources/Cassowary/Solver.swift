@@ -78,7 +78,11 @@ public final class Solver {
 
     // Optimize the artificial objective.  This is successful only if the
     // artificial objective is optimized to zero.
-    try! optimize(objective: artificial!)
+    do {
+        try optimize(objective: artificial!)
+    } catch {
+        return false
+    }
     let success: Bool = artificial!.constant ~= 0.0
     artificial = nil
 
